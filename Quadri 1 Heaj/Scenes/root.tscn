@@ -6,12 +6,12 @@
 [node name="Root" type="Node" unique_id=1517324216]
 
 [node name="Player" parent="." unique_id=765259190 instance=ExtResource("1_8pvmw")]
-position = Vector2(540, 100)
+position = Vector2(540, 350)
 
 [node name="Platforms" type="Node" parent="." unique_id=1391846845]
 
 [node name="Platform" parent="Platforms" unique_id=791628006 instance=ExtResource("2_vnucn")]
-position = Vector2(540, 400)
+position = Vector2(535, 397)
 scale = Vector2(10, 1)
 
 [node name="Platform2" parent="Platforms" unique_id=914571807 instance=ExtResource("2_vnucn")]
@@ -25,3 +25,7 @@ scale = Vector2(1, 5)
 [node name="Platform4" parent="Platforms" unique_id=1728771244 instance=ExtResource("2_vnucn")]
 position = Vector2(1335, 389)
 scale = Vector2(1, 15)
+
+[node name="Platform5" parent="Platforms" unique_id=1103627718 instance=ExtResource("2_vnucn")]
+position = Vector2(1305, 615)
+scale = Vector2(3, 1)

@@ -25,10 +25,13 @@ shape = SubResource("RectangleShape2D_s1fef")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=950461095]
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1175354800]
+scale = Vector2(1.1, 1.1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=735842075]
 scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_khhxn")
 
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
