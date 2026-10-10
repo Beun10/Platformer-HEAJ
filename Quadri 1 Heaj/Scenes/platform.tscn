@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bbd5deyo1yfyj"]
+
+[ext_resource type="Texture2D" uid="uid://bwcrax7nkx2pw" path="res://Sprites/Square borders.png" id="1_1rc8e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s1fef"]
+
+[node name="Platform" type="StaticBody2D" unique_id=914571807]
+collision_layer = 255
+collision_mask = 255
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=316044725]
+texture = ExtResource("1_1rc8e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1343300213]
+scale = Vector2(1.6, 1.6)
+shape = SubResource("RectangleShape2D_s1fef")
