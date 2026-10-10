@@ -32,3 +32,18 @@ func _process(delta: float) -> void:
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	can_climb = true
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	for group in area.get_groups():
+		if group.contains("Killzone"):
+			linear_velocity = Vector2.ZERO
+			gravity_scale = 0
+			position = start_position
+			dead = true
+
+func _on_area_2d_area_exited(area: Area2D) -> void:
+		for group in area.get_groups():
+			if group.contains("Killzone"):
+				await get_tree().create_timer(0.01).timeout
+				gravity_scale = 1
+				dead = false

@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dvxgux0qkfseq" path="res://Scenes/player.tscn" id="1_8pvmw"]
 [ext_resource type="PackedScene" uid="uid://bbd5deyo1yfyj" path="res://Scenes/platform.tscn" id="2_vnucn"]
+[ext_resource type="PackedScene" uid="uid://0dlgu84bvp1j" path="res://Scenes/killzone.tscn" id="3_vnucn"]
 
 [node name="Root" type="Node" unique_id=1517324216]
 
@@ -29,3 +30,9 @@ scale = Vector2(1, 15)
 [node name="Platform5" parent="Platforms" unique_id=1103627718 instance=ExtResource("2_vnucn")]
 position = Vector2(1305, 615)
 scale = Vector2(3, 1)
+
+[node name="Node" type="Node" parent="." unique_id=938979722]
+
+[node name="Killzone" parent="Node" unique_id=1870884665 instance=ExtResource("3_vnucn")]
+position = Vector2(0, 800)
+scale = Vector2(1000, 5)
